@@ -18,6 +18,9 @@ def main():
 				while True:
 					try:
 						amount = float(input("Enter amount: "))
+						if amount < 0:
+							print("Amount can't be negative!")
+							continue
 						break
 					except ValueError:
 						print("Invalid amount! Please enter a number.")
@@ -36,6 +39,8 @@ def main():
 			else:
 				print("Invalid choice, try again.")
 	except KeyboardInterrupt or EOFError:
+		print("\nExiting program.")
+	except EOFError:
 		print("\nExiting program.")
 
 if __name__ == "__main__":
