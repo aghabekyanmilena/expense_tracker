@@ -38,7 +38,7 @@ def main():
 				break
 			else:
 				print("Invalid choice, try again.")
-	except KeyboardInterrupt or EOFError:
+	except KeyboardInterrupt:
 		print("\nExiting program.")
 	except EOFError:
 		print("\nExiting program.")
